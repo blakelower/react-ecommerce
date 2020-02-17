@@ -152,7 +152,7 @@ class ProductProvider extends Component {
   addTotals = () => {
     let subTotal = 0;
     this.state.cart.map(item => (subTotal += item.total)); //add item from subtotal
-    const tempTax = subTotal * 0.1; //this is for the tax to be multipled by 0.1
+    const tempTax = subTotal * 0.01; //this is for the tax to be multipled by 0.1
     const tax = parseFloat(tempTax.toFixed(2)); //parseFloat allows the first number in the string to be returned  //to fixed means for how mamy decimals
     const total = subTotal + tax; //what this line means is that everything is equal and added to the subtotal and tax
     this.setState(() => {
