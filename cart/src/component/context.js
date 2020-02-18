@@ -149,13 +149,14 @@ class ProductProvider extends Component {
       }
     );
   };
-  formatPrice = price => {
-    return new Intl.NumberFormat("en-US", {
-      style: "currency",
-      currency: "USD",
-      currencyDisplay: "symbol"
-    }).format(price);
-  };
+  // formatPrice = price => {
+  //   return new Intl.NumberFormat("en-US", {
+  //     style: "currency",
+  //     currency: "USD",
+  //     currencyDisplay: "symbol"
+  //   }).format(price);
+  // };
+  
   addTotals = () => {
     let subTotal = 0;
     this.state.cart.map(item => (subTotal += item.total)); //add item from subtotal
@@ -164,9 +165,12 @@ class ProductProvider extends Component {
     const total = subTotal + tempTax; //what this line means is that everything is equal and added to the subtotal and tax
     this.setState(() => {
       return {
-        cartSubTotal: this.formatPrice(subTotal),
-        cartTax: this.formatPrice(tax),
-        cartTotal: this.formatPrice(total)
+        // cartSubTotal: this.formatPrice(subTotal), 
+        // cartTax: this.formatPrice(tax),
+        // cartTotal: this.formatPrice(total)
+        cartSubTotal: subTotal, 
+        cartTax: tax,
+        cartTotal: total
       };
     });
   };
