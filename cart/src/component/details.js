@@ -36,7 +36,7 @@ export default class Details extends Component {
                   {/*product text */}
                   <div className="col-10 mx-auto col-md-6 my-3 text-capitalized">
                     <h2>{description}</h2>
-                    <h4 className="text-black">{price}</h4>
+                    <h4 className="text-black">${price}</h4>
                   </div>
                   <p className="text-capitalize font-weight-bold mt-3 mb-6">
                     Information about the product:
