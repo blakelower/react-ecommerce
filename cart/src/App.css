@@ -6,7 +6,7 @@ html {
   --mainLight: #9db8f3;
   --mainPink: #f5bbf3;
   --mainWhite: #f3f3f3;
-  --mainDark: #e7e482;
+  --mainDark: #B999E3;
   --mainYellow: #ecd8d1;
 }
 .btn-black{
@@ -33,7 +33,7 @@ body {
 }
 .text-title {
   font-family: "Open Sans", sans-serif;
-  /* letter-spacing: 0.3rem; */
+  letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
 .text-blue {
