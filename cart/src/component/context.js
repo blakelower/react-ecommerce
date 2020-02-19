@@ -162,7 +162,7 @@ class ProductProvider extends Component {
     this.state.cart.map(item => (subTotal += item.total)); //add item from subtotal
     const tempTax = subTotal * 0.1 //this is for the tax to be multipled by 0.1
     const tax = (tempTax.toFixed(2)); //to fixed means for how mamy decimals
-    const total = subTotal + tempTax; //what this line means is that everything is equal and added to the subtotal and tax
+    const total = (subTotal + tempTax).toFixed(2) //what this line means is that everything is equal and added to the subtotal and tax
     this.setState(() => {
       return {
         // cartSubTotal: this.formatPrice(subTotal), 

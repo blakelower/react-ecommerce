@@ -1,6 +1,6 @@
 import React from "react";
 import PaypalExpressBtn from "react-paypal-express-checkout";
-
+import formatPrice from '../context';
 
 export default class MyApp extends React.Component {
   render() {
@@ -52,7 +52,6 @@ export default class MyApp extends React.Component {
         onError={onError}
         onSuccess={onSuccess}
         onCancel={onCancel}
-        
       />
     );
   }
