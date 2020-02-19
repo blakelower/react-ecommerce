@@ -5,11 +5,11 @@ import styled from "styled-components";
 export default class Navbar extends Component {
   render() {
     return (
-      <NavWrapper className="navbar navbar-expands-sm navbar-dark px-sm-5">
+      <NavWrapper className="navbar navbar-expands-sm  px-sm-5">
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5"></li>
           <Link to="/" className="nav-link">
-            The cutest store
+            Simplicity, the store
           </Link>
         </ul>
         <Link to="/cart" className="ml-auto">
